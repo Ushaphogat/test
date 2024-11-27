@@ -1,0 +1,119 @@
+body {
+  transition: background-color 1s ease-in-out;
+}
+
+body.bg-transition {
+  background-color: skyblue; /* Changed to sky blue */
+  background: linear-gradient(
+    270deg,
+    #ffcccb,
+    #ffe633,
+    #daff33,
+    #33ffd7,
+    #ec9ae7,
+    #d19aec,
+    #9abaec,
+    #9ae6ec,
+    #ec9aad,
+    #c4eebd,
+    #eee4bd,
+    #8dcaa3,
+    #d8ee88,
+    #ff5733,
+    #33ff57,
+    #3357ff,
+    #ff33a1,
+    #a133ff,
+    #33ffa1,
+    #ff8c33,
+    #33ff8c,
+    #8c33ff,
+    #ff338c,
+    #33ff8c,
+    #ff8c33
+  );
+  background-size: 600% 600%;
+  animation: gradientAnimation 30s ease infinite;
+}
+
+body.bg-transition-stop {
+  background-color: skyblue; /* Changed to sky blue */
+  background: linear-gradient(
+    270deg,
+    #ffcccb,
+    #ffe633,
+    #daff33,
+    #33ffd7,
+    #ec9ae7,
+    #d19aec,
+    #9abaec,
+    #9ae6ec,
+    #ec9aad,
+    #c4eebd,
+    #eee4bd,
+    #8dcaa3,
+    #d8ee88,
+    #ff5733,
+    #33ff57,
+    #3357ff,
+    #ff33a1,
+    #a133ff,
+    #33ffa1,
+    #ff8c33,
+    #33ff8c,
+    #8c33ff,
+    #ff338c,
+    #33ff8c,
+    #ff8c33
+  );
+  background-size: 600% 600%;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes textSlide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+h1.anniversary-heading {
+  color: #80a4c8; /* Darker color */
+  font-weight: bold;
+  animation: jumpAnimation 5s ease-in-out; /* Slowed down the animation */
+  transition: transform 0.5s ease-in-out;
+}
+
+.bold-black {
+  color: black;
+  font-weight: bold;
+}
+
+.large-text {
+  font-size: 4rem; /* Adjust the size as needed */
+}
+
+@keyframes jumpAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(
+      -20px
+    ); /* Increased the translateY value for a more noticeable effect */
+  }
+}
